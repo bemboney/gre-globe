@@ -1,0 +1,6 @@
+```apache
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.greetings-globe.ru(.+)$ [NC]
+RewriteRule ^(.*)$ http://greetings-globe.ru/$1 [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\HTTP/
+```
